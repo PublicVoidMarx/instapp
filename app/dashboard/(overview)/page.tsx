@@ -1,6 +1,6 @@
-import Image from 'next/image'
 import { Post } from '../../types/types'
 import PostCard from '../../components/Post'
+import TopBar from '@/app/components/TopBar'
 
 const dat = new Date().toLocaleString().split(',')[0]
 
@@ -14,13 +14,17 @@ const posts: Post[] = [
 
 export default function Page() {
   return (
-    <div className='flex flex-col justify-between overflow-auto'>
-      {posts.map(post => (
-        <>
-          <PostCard comment={post.comment} image={post.image} likes={post.likes} key={post.image} date={post.date} />
-          <br />
-        </>
-      ))}
+    <div>
+      <TopBar />
+      <div className='flex flex-col justify-between overflow-auto'>
+        {posts.map(post => (
+          <>
+            <PostCard comment={post.comment} image={post.image} likes={post.likes} key={post.image} date={post.date} />
+            <br />
+          </>
+        ))}
+      </div>
     </div>
+
   )
 }

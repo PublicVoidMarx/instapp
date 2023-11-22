@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import TopBar from '../../components/TopBar'
 import BottomBar from '../../components/BottomBar'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,11 +15,8 @@ export default function GeneralLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className='flex h-screen flex-col justify-between'>
-      <TopBar />
-      <div className='overflow-auto w-screen'>
-        {children}
-      </div>
+    <div className='h-screen'>
+      {children}
       <BottomBar />
     </div>
   )
