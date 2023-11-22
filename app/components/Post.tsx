@@ -14,10 +14,10 @@ export default function Post({ comment, image, likes, date }: Post) {
         {/* {likes} likes   
         Quiza mejor borrar la idea de likes y enfocar a quien de tus amigos cercanos les gusto*/}
         $(close_friend) like this
-        <div className='flex gap-3'>
+        {/* <div className='flex gap-3'>
           <Image src={'/comment-icon.png'} alt='comment-icon' width={25} height={25} />
           <Image src={'/share-icon.png'} alt='share-icon' width={25} height={25} />
-        </div>
+        </div> */}
       </div>
       <div className='p-2'>{comment}</div>
       <div className='p-2'>{date}</div>
