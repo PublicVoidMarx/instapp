@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import { Post } from '../types/types'
+import { Post } from '../lib/definitions'
 import { likePost } from '../lib/actions'
 
 export default function Post({ comment, image, likes, date }: Post) {

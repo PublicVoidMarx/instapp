@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { useState } from 'react'
-import { AvatarStory } from '../types/types'
+import { AvatarStory } from '../lib/definitions'
 import { useRouter } from 'next/navigation'
 
 export default function AvatarStory({ image }: AvatarStory) {

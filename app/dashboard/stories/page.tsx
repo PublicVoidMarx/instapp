@@ -1,5 +1,5 @@
 'use client'
-import { AvatarStory } from "@/app/types/types";
+import { AvatarStory } from "@/app/lib/definitions";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";

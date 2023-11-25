@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { AvatarStory } from '../types/types'
+import { AvatarStory } from '../lib/definitions'
 import AvatarStor from './AvatarStory'
 
 const stories: AvatarStory[] = [

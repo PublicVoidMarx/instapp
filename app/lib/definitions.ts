@@ -8,3 +8,11 @@ export type Post = {
 export type AvatarStory = {
   image: string
 }
+
+export type Chat = {
+  id: string,
+  title?: string,
+  content: string,
+  members: string[],
+  photo: string
+}

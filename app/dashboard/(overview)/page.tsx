@@ -1,4 +1,4 @@
-import { Post } from '../../types/types'
+import { Post } from '../../lib/definitions'
 import PostCard from '../../components/Post'
 import TopBar from '@/app/components/TopBar'
 
